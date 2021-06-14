@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>
+            Sentiment Anlaysis 
+        </title>
+        <link href="../static/css/styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+            <!--*****************LEFT*****************-->
+        <div class="split left">
+            
+            <!--*****************TOP*****************-->
+            <div class="top">
+                <header>
+                    <p class="heading" style="padding-bottom: 0;">Sentiment Analysis</p>
+                    <p class="subscript">For Hindi-English Code Mixed Text</p>
+                </header>
+                <section>
+                    <form action="/" method="POST">
+                        <label class="input_label" for="ip_text">Enter the input text</label><br>
+                            <textarea type="text" name="ip_text" id="ip_text"></textarea>
+                            <br>
+                        <button class="button_style" type="submit" name="detect">Detect sentiment</button>
+                    </form>
+                </section>
+            </div>
+            <hr>
+            
+            <!--*****************BOTTOM*****************-->
+            <div class="bottom">
+                <section>
+                    <p class="heading">Sentiment Detection</p>
+                    <p class="output">{{ s }}  {% if la %}<span class="accuracy"><i class="fa fa-check-circle"></i>&emsp;{{ la }} {% endif %}</span></p>
+                    <p class="output">{{ mls }} {% if ma %}  <span class="accuracy"><i class="fa fa-check-circle"></i>&emsp;{{ ma }} {% endif %} </span> </p>
+                </section>
+            </div>
+        </div>
+        <div class="split right">
+            <!--*****************RIGHT*****************-->
+            <p class="heading">Preprocessing</p>
+                <p class="subheading">Input</p>
+                <p class="output" name="input_text" id="input_text">{{ i }}</p>
+                <hr>
+                
+                <p class="subheading">Emoji &amp; Abbreviations</p>
+                <p class="output" name="emoji" id="emoji">{{ e }}</p>
+                <hr>
+
+                <p class="subheading">Stopword removal &amp; Transliteration</p>
+                <p class="output" name="stopwords" id="stopwords">{{ t }}</p>
+                <hr>
+                
+                <p class="subheading">POS Tagging &amp; Negation Handling</p>
+                <p class="output" name="pos" id="pos">{{ n }}</p>
+    </body>
+</html>

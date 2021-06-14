@@ -1,0 +1,13 @@
+*.pyc
+*Zone.Identifier
+datasetpreprocessing.py
+classifiers/
+temps/
+tests/
+dictionaries/
+utils/
+mallet/
+mallet-2.0.8/
+.vscode/
+ml_models/__pycache__/
+model

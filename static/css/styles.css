@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap");
+body {
+  font-family: 'Nunito';
+}
+
+.heading {
+  font-weight: bold;
+  font-size: 2em;
+  margin: 0;
+  padding: 1em;
+}
+
+.subscript {
+  padding: 0 0 1em 0;
+  margin: 0;
+  font-weight: bold;
+}
+
+.subheading {
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0.2em;
+  letter-spacing: 0.2em;
+}
+
+.align-ip-op, .bottom .output, .right .output {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.8em;
+  border-radius: 1em;
+  width: 70%;
+  border: 0;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+}
+
+.top {
+  height: 50%;
+}
+
+.bottom {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+}
+
+.bottom .output {
+  text-align: left;
+  padding-left: 2em;
+  color: #000;
+  background-color: #ffffff;
+}
+
+.bottom .output .accuracy {
+  background-color: #30b0cf;
+  color: #ffffff;
+  float: right;
+  margin-top: -13px;
+  margin-bottom: 14px;
+  margin-right: -1em;
+  width: 20%;
+  padding: 0.8em;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+
+.left {
+  background: #f7f7f7;
+  left: 0;
+  color: #000;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+}
+
+.left hr {
+  width: 50%;
+  color: #000;
+}
+
+.left textarea {
+  border-radius: 1.2em;
+  width: 70%;
+  height: 30%;
+  border: 0;
+  margin: 0.5em 1.2em 1.2em 1.2em;
+}
+
+.left .button_style {
+  color: #ffffff;
+  background-color: #30b0cf;
+  font-family: 'Nunito';
+  border-radius: 2.5em;
+  border: 0;
+  padding: 1em;
+  margin: 0.5em;
+}
+
+.left button:hover {
+  background-color: #30b0cf;
+  font-weight: bold;
+}
+
+.right {
+  background-color: #30b0cf;
+  right: 0;
+  color: #ffffff;
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+}
+
+.right hr {
+  width: 50%;
+  color: #ffffff;
+}
+
+.right .output {
+  background-color: #ffffff;
+  color: #000;
+  font-weight: 400;
+}
+/*# sourceMappingURL=styles.css.map */

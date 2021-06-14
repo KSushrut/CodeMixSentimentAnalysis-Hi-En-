@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+@mixin center-align{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+}
+
+
+$LightGrey: #f7f7f7;
+$DarkGrey: #30b0cf;
+$Black: #000;
+$White: #ffffff;
+
+
+body{
+    font-family: 'Nunito';
+}
+.heading{
+    font-weight: bold;
+    font-size: 2em;
+    margin: 0;
+    padding: 1em;
+}
+.subscript{
+    padding: 0 0 1em 0;
+    margin: 0;
+    font-weight: bold;
+}
+.subheading{
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0.2em;
+    letter-spacing: 0.2em;
+}
+.align-ip-op{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.8em;
+    border-radius: 1em;
+    width: 70%;
+    border: 0;
+}
+
+.split{
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    
+}
+.top{
+    height: 50%;
+}
+.bottom{
+    
+    @include center-align;
+    .output{
+        @extend .align-ip-op;
+        text-align: left;
+        padding-left: 2em;
+        color: $Black;
+        background-color: $White;
+        .accuracy{
+            background-color: $DarkGrey;
+            color: $White;
+            float: right;
+            margin-top: -13px;
+            margin-bottom: 14px;
+            margin-right: -1em;
+            width: 20%;
+            padding: 0.8em;
+            border-top-right-radius: 1em;
+            border-bottom-right-radius: 1em;
+        }
+    }
+}
+.left{
+    background: $LightGrey;
+    left: 0;
+    color:$Black;
+    @include center-align();
+    hr{
+        width: 50%;
+        color: $Black;
+    }
+    textarea{
+        border-radius: 1.2em;
+        width: 70%;
+        height:30%;
+        border: 0;
+        margin: 0.5em 1.2em 1.2em 1.2em;
+        
+    }
+    .button_style{
+        color: $White;
+        background-color: $DarkGrey;
+        font-family: 'Nunito';
+        border-radius: 2.5em;
+        border: 0;
+        padding: 1em;
+        margin: 0.5em;
+    }
+    button:hover{
+        background-color:$DarkGrey;
+        font-weight: bold;
+    }
+}
+
+
+.right{
+    background-color: $DarkGrey;
+    right: 0;
+    color:$White;
+    font-weight: 700;
+    @include center-align;
+    
+    hr{
+        width: 50%;
+        color: $White;
+    }
+    .output{
+        @extend .align-ip-op;
+        background-color: $White;
+        color: $Black;
+        font-weight: 400;
+    }
+}
