@@ -1,4 +1,4 @@
-# Code-Mixed Sentiment Analysis for Multi-lingual[EN-HI] Social media text
+# Code-Mixed Sentiment Analysis for Multi-lingual [EN-HI] Social media text
 
 <h2>Introduction</h2>
 ***Abstract***: 
